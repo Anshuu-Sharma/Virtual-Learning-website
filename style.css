@@ -160,6 +160,8 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fly 1s ease forwards;
+    opacity: 0;
 }
 #trust_companies{
     display: flex;
@@ -176,4 +178,14 @@ a{
 #trust_comp_box img{
     width: 20px;
     height: 20px;
+}
+@keyframes fly {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
