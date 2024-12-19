@@ -249,6 +249,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin-bottom: 20px;
 }
 @media (min-width:944px) {
     .cards_area{
@@ -300,4 +301,53 @@ a{
 }
 #card6{
     background-color: rgb(30, 89, 148);
+}
+
+.testimonial_section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#test_head_section{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#testimonials{
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+}
+@media (max-width:944px) {
+   #testimonials{
+    grid-template-columns: 1fr;
+   }
+}
+#test{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: smaller;
+    max-width: 300px;
+    min-width: 350px;
+    padding: 10px;
+    text-align: center;
+    gap: 0.7rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#test:hover{
+    box-shadow: 0px 0px 20px gold;
+}
+#testimonials img{
+    width: 70px;
+
+}
+#test_name{
+    color: var(--hover-color);
+}
+#test_person_desc{
+    color: grey;
 }
