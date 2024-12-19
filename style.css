@@ -92,6 +92,7 @@ a{
     margin-top: 60px;
     animation: fly 1s ease forwards;
     opacity: 0;
+    margin-bottom: 6rem;
 }
 @keyframes fly {
     0%{
@@ -152,4 +153,27 @@ a{
 }
 #take_tour:hover{
     background-color: rgb(106, 104, 104);
+}
+
+.trust_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#trust_companies{
+    display: flex;
+    padding: 20px;
+}
+#trust_comp_box{
+    display: flex;
+    background-color: rgb(241, 238, 238);
+    padding: 24px;
+    gap: 0.5rem;
+    color: #9999a3;
+    font-weight: 550;
+}
+#trust_comp_box img{
+    width: 20px;
+    height: 20px;
 }
